@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+   <head>
+   </head>
+   <body>
+      <img src="https://i.imgur.com/WEj49fZ.png"height="100%" width="100%"> 
+      <div style="
+         width: 300px;
+         height: 300px;
+         position: absolute;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%, -50%);"/>
+		Title: <%= @review_data.title %><br>
+		Rating: <%= @review_data.rating %> <br>
+		Review: <%= @review_data.body %> <br>
+
+	<form method= "POST" action= "/editreview">
+         <input type="hidden" name="current_review_id" value="<%= @review_data.id %>" />
+		<input type="submit" value="Edit" name="submit_button"/><br>
+    </form>
+	<form method= "POST" action= "/delete">
+         <input type="hidden" name="current_review_id" value="<%= @review_data.id %>" />
+		<input type="submit" value="Delete" name="submit_button"/><br>
+    </form>
+		<form method= "POST" action= "/signout">
+			<input type="submit" value="Sign Out" name="submit_button"/><br>
+		</form>
+		</div>
+		</body>
+</html> 
