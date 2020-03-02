@@ -56,3 +56,5 @@ D, [2020-03-01T17:54:37.434177 #6692] DEBUG -- :   [1m[36mUser Exists? (0.2ms)
 D, [2020-03-01T17:54:37.437811 #6692] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
 D, [2020-03-01T17:54:37.438863 #6692] DEBUG -- :   [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "IRSWeezy"], ["password", "lol123"], ["created_at", "2020-03-01 23:54:37.437322"], ["updated_at", "2020-03-01 23:54:37.437322"]]
 D, [2020-03-01T17:54:37.450614 #6692] DEBUG -- :   [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-03-02T12:29:30.547805 #13896] DEBUG -- :   [1m[35m (5.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2020-03-02T12:29:30.565413 #13896] DEBUG -- :   [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
