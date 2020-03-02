@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_02_23_073236) do
 
-  create_table "reviews", force: :cascade do |t|
+  create_table :reviews do |t|
     t.string "title"
     t.integer "rating"
     t.string "body"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2020_02_23_073236) do
     t.string "user_id"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table :users do |t|
     t.string "username"
     t.string "password"
     t.datetime "created_at"

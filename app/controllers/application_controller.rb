@@ -31,14 +31,7 @@ class ApplicationController < Sinatra::Base
 			redirect "/postreview"
 		end
 	end 
-	
-	get "/dummysavesessionvar" do 
-		 session[test_var] = "test variable value is here!"
-	end
-	
-	get "/viewsavedsessionvar" do
-		puts session["test_var"]
-	end
+
 
 	post "/login" do
 		username =params['username']
@@ -88,12 +81,7 @@ class ApplicationController < Sinatra::Base
 	end
 
     get "/edit" do
-       # if session["username"] != nil
-		#	erb :edit
-		#else
-            #not logged in. Goodbye
             redirect "/"
-		#end
 	end
     
     post "/postreview" do
@@ -132,38 +120,26 @@ class ApplicationController < Sinatra::Base
 			poster_username = user_result.username
 			
 			if(poster_username == session["username"])
-				#good, they can edit
 				erb :edit
 			else
-				#no, they can't edit
 				redirect "/"
 			end
         else 
-            #not logged in. Goodbye
             redirect "/"
 		end
 	end
 	
     post "/edit" do
-			puts "HERE!"
         if session["username"] != nil
-			puts"HERE1!"
 			review_id = params["current_review_id"]
-			puts"HERE2!"
 			review = Review.find_by(id: "#{review_id}")
-			puts"HERE3!"
 			@review_data = review
-			puts"HERE4!"
 			posters_user_id = review.user_id
-			puts"HERE5!"
 			user_result = User.find_by(id: "#{posters_user_id}")
-			puts"HERE6!"
 			poster_username = user_result.username
-			
-			"HERE!"
+
 			if(poster_username == session["username"])
 				#good, they can edit
-				puts "HERE1!"
 				title =params['title']
 				rating =params['rating']
 				review =params['body']
@@ -172,10 +148,8 @@ class ApplicationController < Sinatra::Base
 				puts "Review: #{review}"
 				result = Review.update(review_id, "title" => "#{title}", "rating" => "#{rating}", "body" => "#{review}")
 				if(result)
-				puts "HERE7!"
 					redirect "/viewreview/#{review_id}"
 				else 
-				puts "HERE8!"
 					redirect "/edit"
 				end
 			else

@@ -9,3 +9,50 @@ D, [2020-02-23T02:36:52.656400 #6452] DEBUG -- :   [1m[36mUser Create (758.7ms
 D, [2020-02-23T02:36:52.883340 #6452] DEBUG -- :   [1m[35m (224.8ms)[0m  [1m[36mcommit transaction[0m
 D, [2020-02-23T02:37:00.156584 #6452] DEBUG -- :   [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."password" = ? LIMIT ?[0m  [["username", "myUsername1"], ["password", "pass1"], ["LIMIT", 1]]
 D, [2020-02-23T02:37:01.526366 #6452] DEBUG -- :   [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."password" = ? LIMIT ?[0m  [["username", "myUsername1"], ["password", "pass1"], ["LIMIT", 1]]
+D, [2020-03-01T16:56:45.016131 #236] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2020-03-01T16:56:45.020595 #236] DEBUG -- :   [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."password" = ? LIMIT ?[0m  [["username", "IRSWeezy"], ["password", "lol123"], ["LIMIT", 1]]
+D, [2020-03-01T16:56:47.662869 #236] DEBUG -- :   [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."password" = ? LIMIT ?[0m  [["username", "IRSWeezy"], ["password", "lol123"], ["LIMIT", 1]]
+D, [2020-03-01T16:56:48.637134 #236] DEBUG -- :   [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."password" = ? LIMIT ?[0m  [["username", "IRSWeezy"], ["password", "lol123"], ["LIMIT", 1]]
+D, [2020-03-01T16:57:10.425887 #236] DEBUG -- :   [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."password" = ? LIMIT ?[0m  [["username", "IRSWeezy"], ["password", "lol123"], ["LIMIT", 1]]
+D, [2020-03-01T16:59:50.800179 #2084] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2020-03-01T16:59:50.807264 #2084] DEBUG -- :   [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+D, [2020-03-01T16:59:58.547031 #2084] DEBUG -- :   [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+D, [2020-03-01T17:00:10.230127 #2084] DEBUG -- :   [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."password" = ? LIMIT ?[0m  [["username", "brisk0909"], ["password", "123456"], ["LIMIT", 1]]
+D, [2020-03-01T17:02:36.031230 #2084] DEBUG -- :   [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."password" = ? LIMIT ?[0m  [["username", "IRSWeezy"], ["password", "lol123"], ["LIMIT", 1]]
+D, [2020-03-01T17:02:48.069736 #2084] DEBUG -- :   [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."password" = ? LIMIT ?[0m  [["username", "myUser"], ["password", "pass"], ["LIMIT", 1]]
+D, [2020-03-01T17:04:23.202313 #2084] DEBUG -- :   [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+D, [2020-03-01T17:04:30.933239 #2084] DEBUG -- :   [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+D, [2020-03-01T17:04:47.239919 #2084] DEBUG -- :   [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."password" = ? LIMIT ?[0m  [["username", "testing"], ["password", "testing"], ["LIMIT", 1]]
+D, [2020-03-01T17:04:48.941259 #2084] DEBUG -- :   [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."password" = ? LIMIT ?[0m  [["username", "myUser"], ["password", "pass"], ["LIMIT", 1]]
+D, [2020-03-01T17:28:29.694074 #16220] DEBUG -- :   [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2020-03-01T17:28:29.699334 #16220] DEBUG -- :   [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."password" = ? LIMIT ?[0m  [["username", "myUser"], ["password", "pass"], ["LIMIT", 1]]
+D, [2020-03-01T17:28:37.763495 #16220] DEBUG -- :   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "myUser"], ["LIMIT", 1]]
+D, [2020-03-01T17:28:37.771912 #16220] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-03-01T17:28:37.774764 #16220] DEBUG -- :   [1m[36mReview Create (1.1ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "rating", "body", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "League of Legends"], ["rating", 10], ["body", "15"], ["created_at", "2020-03-01 23:28:37.771596"], ["updated_at", "2020-03-01 23:28:37.771596"], ["user_id", "1"]]
+D, [2020-03-01T17:28:37.786805 #16220] DEBUG -- :   [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-03-01T17:28:37.800375 #16220] DEBUG -- :   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-01T17:28:45.710614 #16220] DEBUG -- :   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-01T17:28:45.711198 #16220] DEBUG -- :   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-01T17:28:50.502046 #16220] DEBUG -- :   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-01T17:28:50.502401 #16220] DEBUG -- :   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-01T17:28:50.505699 #16220] DEBUG -- :   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-01T17:28:50.506407 #16220] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-03-01T17:28:50.507717 #16220] DEBUG -- :   [1m[36mReview Update (1.1ms)[0m  [1m[33mUPDATE "reviews" SET "body" = ?, "updated_at" = ? WHERE "reviews"."id" = ?[0m  [["body", "good game"], ["updated_at", "2020-03-01 23:28:50.506101"], ["id", 1]]
+D, [2020-03-01T17:28:50.517372 #16220] DEBUG -- :   [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-03-01T17:28:50.532064 #16220] DEBUG -- :   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-01T17:28:51.877127 #16220] DEBUG -- :   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-01T17:28:51.877548 #16220] DEBUG -- :   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-01T17:28:51.877871 #16220] DEBUG -- :   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-01T17:28:51.878178 #16220] DEBUG -- :   [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2020-03-01T17:28:51.878525 #16220] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-03-01T17:28:51.879871 #16220] DEBUG -- :   [1m[36mReview Destroy (1.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = ?[0m  [["id", 1]]
+D, [2020-03-01T17:28:51.889094 #16220] DEBUG -- :   [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+D, [2020-03-01T17:29:13.302053 #16220] DEBUG -- :   [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."password" = ? LIMIT ?[0m  [["username", "IRSWeezy"], ["password", "lol123"], ["LIMIT", 1]]
+D, [2020-03-01T17:29:25.559500 #16220] DEBUG -- :   [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+D, [2020-03-01T17:29:34.936455 #16220] DEBUG -- :   [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."password" = ? LIMIT ?[0m  [["username", "IRSWeezy"], ["password", "123"], ["LIMIT", 1]]
+D, [2020-03-01T17:54:27.649981 #6692] DEBUG -- :   [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2020-03-01T17:54:27.655984 #6692] DEBUG -- :   [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."password" = ? LIMIT ?[0m  [["username", "IRSWeezy"], ["password", "lol123"], ["LIMIT", 1]]
+D, [2020-03-01T17:54:37.434177 #6692] DEBUG -- :   [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "IRSWeezy"], ["LIMIT", 1]]
+D, [2020-03-01T17:54:37.437811 #6692] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2020-03-01T17:54:37.438863 #6692] DEBUG -- :   [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "IRSWeezy"], ["password", "lol123"], ["created_at", "2020-03-01 23:54:37.437322"], ["updated_at", "2020-03-01 23:54:37.437322"]]
+D, [2020-03-01T17:54:37.450614 #6692] DEBUG -- :   [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
